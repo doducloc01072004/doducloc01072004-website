@@ -1,0 +1,586 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Web du lich</title>
+    <script src="https://kit.fontawesome.com/2d7e266e2b.js" crossorigin="anonymous"></script>
+    <style>
+      *{
+          margin :0;
+          padding:0;
+          box-sizing:border-box;
+      }
+      ul{
+          list-style:none;
+      } 
+      .po{
+          position: fixed;
+      }
+      .nav1{
+          background-color:#f5f6fa;
+          width:100%;
+      }
+      .nav1 ul{
+          display:flex;
+          justify-content:between;
+          align-items:center;
+      }
+        .nav1 img {
+            width: 160px;
+            height: 60px;
+            margin:0px 80px 0px 70px;
+        }
+        .nav1 input{
+          width:610px;
+          height:35px;
+          margin:10px 0px 10px 10px;
+          padding:10px;
+        }
+        .button2{
+            width:35px;
+            height:35px;
+            margin:10px 80px 10px 0px;
+            background-color:#EE5A24;
+            border-radius:1px;
+            border:none;
+            cursor:pointer;
+        }
+        .button1{
+          background-color:#00a8ff;
+          width:95px;
+          height:35px;
+          border-radius:4px;
+          font-size:14px;
+          text-align:center;
+          margin:10px;
+          pading:10px;
+          color:#f5f6fa;
+          cursor:pointer;
+          border:none;
+      }
+        .menu-bar{
+            background-color:#D980FA;
+        }
+        .menu-bar ul{
+            display:flex;
+            justify-content:space-between;
+            width: 100%;
+        }
+        .menu-bar ul li{
+            list-style-type: none;
+            width: 234px;
+            text-align: center;
+        }
+        .menu-bar ul li a{
+            color:#f5f6fa;
+            text-transform:uppercase;
+            font-size:25px;
+            font-weight:bold:
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .menu-bar-content a{
+            text-decoration:none;
+        }
+        .menu-bar-content i{
+            font-size:15px;
+        }
+        .menu-bar ul li{
+             padding: 15px 15px;
+        }
+        .menu-bar ul li a:hover{
+            color:#353b48;
+        }
+        footer{
+            width:100%;
+            background-color:#130f40;
+            display:flex;
+            height:240px;
+            margin:0px;
+            padding:0px;
+            justify-content:between;
+        }
+        .ttlh{
+            width:510px;
+        }
+        .ttlh h2{
+            text-align:center;
+            margin: 20px 20px;
+            font-size:25px;
+            color:#44bd32;
+            font-weight:bold:
+            font-family:Arial, Helvetica, sans-serif;
+            text-transform:uppercase;
+        }
+        .ttlh p {
+            text-align:center;
+            font-size:25px;
+            color:#f0f2f5;
+            font-weight:bold:
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .ttlh li{
+            color:#f0f2f5;
+            font-weight:bold:
+            font-family:Arial, Helvetica, sans-serif;
+            margin:8px 110px;
+            font-size:15px;
+        }
+        .ttlh i{
+            margin:0px 6px;
+            font-size:15px;
+        }
+        .httv{
+            width:350px;
+        }
+        .httv ul{
+            display:flex;
+            justify-content:between;
+        }
+        .httv h2{
+            text-align:center;
+            margin: 20px 20px;
+            font-size:25px;
+            color:#44bd32;
+            font-weight:bold:
+            font-family:Arial, Helvetica, sans-serif;
+            text-transform:uppercase;
+        }
+        .httv ul{
+            margin :0px 100px;
+        }
+        .httv p{
+            text-align:center;
+            font-size:20px;
+            color:#fff200;
+            font-weight:bold:
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .httv img{
+            width: 25px;
+            height: 25px;
+            margin : 20px 6px;
+        }
+        .ttcb{
+            width:510px;
+        }
+        .ttcb h2{
+            text-align:center;
+            margin: 20px 20px;
+            font-size:25px;
+            color:#44bd32;
+            font-weight:bold:
+            font-family:Arial, Helvetica, sans-serif;
+            text-transform:uppercase;
+        }
+        .ttcb li { 
+            margin : 7px 0px;
+        }
+        .ttcb li a{
+            color:#f0f2f5;
+            font-weight:bold:
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0px 125px;
+            font-size:20px;
+            text-decoration:none;
+        }
+        .ttcb li a:hover{
+            color:#2C3A47;
+        }
+        .product{
+            width:100%;
+            margin:0 auto;
+            padding:0 ;
+            background-color:#f5f6fa;
+        }
+        .tilte h1{
+            text-align:center;
+            margin:0px 0px 10px 15px;
+            text-transform:uppercase;
+            color:#ffa502;
+            font-family:Arial;
+        }
+        .content {
+            width:1020px;
+            height:1090px;
+            margin:0 auto;
+            padding:0 auto;
+        }
+        .content1,.content2{
+            display:flex;
+            justify-content:space-around;
+            margin:0px 0px 25px 0px;;
+        }
+        .product-content{
+            border: 1px solid #1e272e;
+            height:500px;
+        }
+        .product-content img{
+            width:300px;
+            height:370px;
+            cursor:pointer;
+        }
+        .product-content-text a{
+            text-decoration:none;
+            font-size:20px;
+            color:#130f40;
+            margin:0px 0px 0px 15px;
+            font-weight: 580;
+        }
+        .product-content-text p{
+            margin:10px 15px;
+            color:#ff7979;
+        }
+        .product-content-text i{
+            margin:0px 5px 0px 0px;
+        }
+        .product-content-text span{
+            margin:5px 15px;
+            color:#f0932b;
+            font-size:20px;
+            font-weight:600;
+        }
+        .product-content-text ul{
+            display:flex;
+            justify-content:between;
+            padding:0px 15px;
+        }
+        .product-content-text button{
+            display:inline-flex;
+            margin:0px 20px 0px 0px;
+            background-color:#e84118;
+            width:75px;
+            height:25px;
+            border-radius:4px;
+            font-size:12px;
+            text-align:center;
+            color:#f5f6fa;
+            cursor:pointer;
+            border:none;
+            text-transform:uppercase;
+            font-family:Arial;
+        }
+        .introduce{
+            width:1020px;
+            margin:0 auto;
+        }
+        .introduce h2{
+            color:#130f40;
+            margin:10px 10px;
+        }
+        .introduce p{
+            margin:20px;
+            font-size:18px;
+            line-height:20px;
+        }
+        .introduce h1{
+            text-align:center;
+            margin:0px 0px 10px 15px;
+            text-transform:uppercase;
+            color:#ffa502;
+            font-family:Arial;
+        }
+        .exp{
+            width:100%;
+            margin:0 auto;
+        }
+        .exp1{
+            width:1020px;
+            margin:auto;
+        }
+        .exp ul {
+            display:flex;
+        }
+        .exp1 img{
+            width:300px;
+            height:200px;
+        }
+        .exp ul li a{
+           text-decoration:none;
+           font-size:25px;
+           color:#1e272e;
+        }
+        .homepage{
+            width:100%;
+            height:480px;
+        }
+        .picture img{
+            width:1350px;
+            height:300px;
+            margin:122px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="po">
+        <nav class="nav1">
+            <ul>
+                <li><a href=""><img src="anh/travel-logo-06.jpg" alt="" /></a></li>
+                <li><input type="text" placeholder="Nhập khách sạn hoặc địa điểm muốn tìm ..." /><button class="button2"><i class="fa-solid fa-magnifying-glass" style="color: #fffafd;"></i></button></li>
+                <li><button class="button1">Đăng ký</button></li>
+                <li><button class="button1">Đăng nhập</button></li>
+            </ul>
+        </nav>
+    <section class="menu-bar">
+            <div class="menu-bar-content">
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Khách sạn<i class="fa-solid fa-chevron-down" style="color: #bac5d8;"></i></a></li>
+                    <li><a href="">Tour du lịch<i class="fa-solid fa-chevron-down" style="color: #bac5d8;"></i></a></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Cẩm nang<i class="fa-solid fa-chevron-down" style="color: #bac5d8;"></i></a></li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+        </div>
+    </section>
+    </div>
+    <div class="homepage">
+        <div class="picture"><img src="https://dulich2.az9s.group/wp-content/uploads/2017/11/banner1-2.jpg"/>"</div>
+    </div>
+    <div class="product">
+        <div class="tilte">
+            <h1>Khách sạn</h1>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <div class="product-content">
+                    <img src="https://ik.imagekit.io/tvlk/blog/2022/10/resort-hoi-an-3.jpg" />
+                    <div class="product-content-text">
+                        <a href="#">Resort Hội An</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:20 Lê Lợi,Hội An</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                        </ul>
+                        <span>900.000 đồng/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1616038719/blog/nsdakq9tictsgwntomdy.webp" />
+                    <div class="product-content-text">
+                        <a href="#">Dalat Wonder Resort </a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:19 Hoa Hồng,T.Phố Đà Lạt</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                        </ul>
+                        <span>800.000 đồng/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <img src="https://phuot3mien.com/wp-content/uploads/2021/04/royal-ha-long-villas-1.jpg" />
+                    <div class="product-content-text">
+                        <a href="#">Royal Lotus Ha Long Resort</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:Bán đảo 2,T.Phố Hạ Long</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                        </ul>
+                        <span>900.000/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="product-content">
+                    <img src="https://du-lich.chudu24.com/f/m/2105/19/khach-san-the-reed-ninh-binh-6.jpg" />
+                    <div class="product-content-text">
+                        <a href="#">The Reed Hotel</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:Đông Thành,T.Phố Ninh Bình</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                        </ul>
+                        <span>500.000/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/270x200/170217927.jpg?k=c1c6a4535c5d9b328945920c659242196a6b459d5f53831d48658b243589c13e&o=" />
+                    <div class="product-content-text">
+                        <a href="#">Victory Hotel</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:36 Lê Duẩn,T.Phố Hà Giang</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                        </ul>
+                        <span>600.000/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMa8EjTkJM1-JMpEvSHeFgLPYEklVcxsAMMg&usqp=CAU" />
+                    <div class="product-content-text">
+                        <a href="#">Khách sạn SAM Quảng Bình</a>
+                        <p><i class="fa-sharp fa-solid fa-location-dot" style="color: #091120;"></i>Địa Chỉ:13 Lý Thường Kiệt,Đồng Hới</p>
+                        <ul>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #d1e91c;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                            <li><i class="fa-solid fa-star" style="color: #babcae;"></i></li>
+                        </ul>
+                        <span>500.000/ngày</span>
+                        <button>Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="tilte">
+                <h1>Tour du lịch</h1>
+            </div>
+            <div class="content">
+                <div class="content1">
+                    <div class="product-content">
+                        <img src="https://dulichvn.org.vn/nhaptin/uploads/images/2020/Thang3/pnhaqbinh.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Quảng Bình 7 ngày 7 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>7 ngày 7 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Quảng Bình-Hà Nội</p>
+                            <span>8.700.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <img src="https://toquoc.mediacdn.vn/2020/4/26/da-nang-15878865291212013802504.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Đà Nẵng - Hội An 4N3Đ </a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>4 ngày 3 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hồ Chí Minh-Đà Nẵng-Hồ Chí Minh</p>
+                            <span>5.200.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <img src="https://dulich3.az9s.group/wp-content/uploads/2017/11/Sapa4-2-247x296.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Hà Giang 5 ngày 4 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>5 ngày 4 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Hà Giang-Hà Nội</p>
+                            <span>6.700.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="product-content">
+                        <img src="https://dulich3.az9s.group/wp-content/uploads/2017/11/ninh-binh-247x296.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Ninh Bình 3 ngày 2 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>3 ngày 2 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Ninh Bình-Hà Nội</p>
+                            <span>3.000.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <img src="https://dulich3.az9s.group/wp-content/uploads/2017/11/tour-da-lat-thang-7-top-travels-247x296.jpg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Đà Lạt 2 ngày 1 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>3 ngày 2 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Đà Lạt-Hà Nội</p>
+                            <span>1.800.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <img src="https://vcdn1-dulich.vnecdn.net/2022/03/18/119218817662774954346470407058-1806-5581-1647597051.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=bGYfcztb_UzX6tjQRbCjsg" />
+                        <div class="product-content-text">
+                            <a href="#">Tour Vịnh Hạ Long 3 ngày 2 đêm</a>
+                            <p><i class="fa-regular fa-clock" style="color: #091120;"></i>3 ngày 2 đêm</p>
+                            <p><i class="fa-regular fa-calendar-days" style="color: #091120;"></i>Hà Nội-Vịnh Hạ Long-Hà Nội</p>
+                            <span>4.700.000 đồng</span>
+                            <button>Xem chi tiết</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce">
+                <h1>Giới thiệu</h1>
+                <h2>Câu chuyện của chúng tôi</h2>
+                <p>- Trips Travel chính là một câu chuyện thành công mà chúng tôi muốn chia sẻ với các bạn. Trips Travel được thành lập vào năm 2023 bởi bởi một cậu sinh viên đến từ Quảng Bình. Đỗ Đức Lộc phụ trách quản lý và sản phẩm, trách nhiệm mảng kinh doanh. Mặc dù có kinh nghiệm nhiều năm làm việc tại một công ty tour du lịch trước đó,Đỗ Đức Lộc vẫn còn nhiều e ngại khi tiếp cận các đối tác nước ngoài, vì nhiều người sẽ nghĩ rằng 18 tuổi là quá trẻ để làm chủ một doanh nghiệp.</p>
+                <p>- Cũng giống như nhiều startup khác, những ngày đầu tiên chúng tôi đã gặp rất nhiều khó khăn. Văn phòng thì nhỏ, các đơn đặt mua đến chậm chạp, chủ yếu từ bạn bè và người thân muốn đặt vé và phòng khách sạn.</p>
+                <h2>Nhận diện thương hiệu</h2>
+                <p>- Giá trị của chúng tôi là giúp việc kinh doanh của công ty tiến hành một cách rất có nguyên tắc.Slogan của chúng tôi là: “Experience is true value” trải nghiệm tạo nên giá trị đích thực.</p>
+                <p>- Tên Trips Travel xuất phát từ thực tế rằng chúng tôi sẵn sàng đồng hành cùng bạn trên mọi chuyến đi , kể cả trong hay là ngoài nước và là một đối tác kinh doanh uy tín, đáng tin cậy với “Sự chăm sóc liên tục” và “khiêm tốn” để chuẩn bị cho tương lai và chúng tôi luôn luôn ghi nhớ rằng khách hàng và đối thủ cạnh tranh là yếu tố cần thiết để cải thiện bản thân doanh nghiệp. “Ngay thẳng” có nghĩa là tính minh bạch và trách nhiệm đi đôi với cảm hứng cũng như thách thức trong công việc. Sống và làm việc theo những giá trị đặc biệt, chia sẻ đam mê và cam kết tiếp tục phấn đấu, sẵn sàng cho những nấc thang cao hơn.</p>
+                <p>Chúng tôi hy vọng sẽ là người bạn đồng hành đáng tin cậy của bạn trong tương lai!</p>
+            </div>
+            <div class="exp">
+                <div class="tilte"><h1>Cẩm nang du lịch</h1></div>
+                <div class="exp1">
+                    <ul>
+                        <li><a href="https://www.vietnambooking.com/du-lich/trai-nghiem/kinh-nghiem-di-phong-nha-ke-bang.html"><img src="https://www.vietnambooking.com/wp-content/uploads/2021/02/kinh-nghiem-du-lich-phong-nha-ke-bang.jpg"</a></li>
+                        <li><a href="https://www.vietnambooking.com/wp-content/uploads/2021/02/kinh-nghiem-du-lich-phong-nha-ke-bang.jpg">Kinh nghiệm du lịch Phong Nha Kẻ Bàng 2023 | Khám phá vương quốc hang động</a></li>
+                    </ul>
+                </div>
+                <div class="exp1">
+                    <ul>
+                        <li><a href="https://www.bestprice.vn/blog/diem-den-8/sapa-100/chuyen-du-lich-sapa-tu-tuc-cua-nhom-ban-9x_2-1676.html"><img src="https://owa.bestprice.vn/images/articles/uploads/kinh-nghiem-du-lich-sapa-tu-a-z-cho-nguoi-moi-di-lan-dau-5e8ef7e82dd43.jpg"</a></li>
+                        <li><a href="https://www.bestprice.vn/blog/diem-den-8/sapa-100/chuyen-du-lich-sapa-tu-tuc-cua-nhom-ban-9x_2-1676.html">Kinh nghiệm du lịch Sapa tự túc - xách balo lên đường chinh phục Tây Bắc ngay thôi</a></li>
+                    </ul>
+                </div>
+                <div class="exp1">
+                    <ul>
+                        <li><a href="https://www.traveloka.com/vi-vn/explore/destination/du-lich-da-lat-tu-tuc/210868"><img src="https://danviet.mediacdn.vn/2021/1/20/1-16111088039931950762885.png"</a></li>
+                        <li><a href="https://www.traveloka.com/vi-vn/explore/destination/du-lich-da-lat-tu-tuc/210868">Siêu hữu ích: Kinh nghiệm du lịch Đà Lạt tự túc cho người đi lần đầu</a></li>
+                    </ul>
+                </div>
+                <div class="exp1">
+                    <ul>
+                        <li><a href="https://www.vietnambooking.com/du-lich/trai-nghiem/kinh-nghiem-du-lich-ha-giang.html"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QDiRXhpZgAASUkqAAgAAAADAA4BAgCgAAAAMgAAAJiCAgAIAAAA0gAAABIBAwABAAAAAQAAAAAAAABQYXNzIHJvYWQgaHVncyB0aGUgbW91bnRhaW4gcGxhdGVhdSBvZiBEb25nIFZhbiwgSGEgR2lhbmcsIFZpZXRuYW0gaXMgdmVyeSB0cmVhY2hlcm91cywgYnV0IHRoZSBtb3N0IGJlYXV0aWZ1bCwgcGVhY2VmdWwuIFRoZSBtb3JlIEkgc2VlIGxvdmUgdGhlaXIgY291bnRyeSBtb3JlSHV5VGhvYWn/7QD4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAANwcAlAACEh1eVRob2FpHAJ4AKBQYXNzIHJvYWQgaHVncyB0aGUgbW91bnRhaW4gcGxhdGVhdSBvZiBEb25nIFZhbiwgSGEgR2lhbmcsIFZpZXRuYW0gaXMgdmVyeSB0cmVhY2hlcm91cywgYnV0IHRoZSBtb3N0IGJlYXV0aWZ1bCwgcGVhY2VmdWwuIFRoZSBtb3JlIEkgc2VlIGxvdmUgdGhlaXIgY291bnRyeSBtb3JlHAJ0AAhIdXlUaG9haRwCbgAYR2V0dHkgSW1hZ2VzL2lTdG9ja3Bob3Rv/+EFtmh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+Cgk8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgoJCTxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6SXB0YzR4bXBDb3JlPSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wQ29yZS8xLjAveG1sbnMvIiAgIHhtbG5zOkdldHR5SW1hZ2VzR0lGVD0iaHR0cDovL3htcC5nZXR0eWltYWdlcy5jb20vZ2lmdC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBsdXM9Imh0dHA6Ly9ucy51c2VwbHVzLm9yZy9sZGYveG1wLzEuMC8iICB4bWxuczppcHRjRXh0PSJodHRwOi8vaXB0Yy5vcmcvc3RkL0lwdGM0eG1wRXh0LzIwMDgtMDItMjkvIiB4bWxuczp4bXBSaWdodHM9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9yaWdodHMvIiBkYzpSaWdodHM9Ikh1eVRob2FpIiBwaG90b3Nob3A6Q3JlZGl0PSJHZXR0eSBJbWFnZXMvaVN0b2NrcGhvdG8iIEdldHR5SW1hZ2VzR0lGVDpBc3NldElEPSI0OTE5Mzg0NTAiIHhtcFJpZ2h0czpXZWJTdGF0ZW1lbnQ9Imh0dHBzOi8vd3d3LmdldHR5aW1hZ2VzLmNvbS9ldWxhP3V0bV9tZWRpdW09b3JnYW5pYyZhbXA7dXRtX3NvdXJjZT1nb29nbGUmYW1wO3V0bV9jYW1wYWlnbj1pcHRjdXJsIiA+CjxkYzpjcmVhdG9yPjxyZGY6U2VxPjxyZGY6bGk+SHV5VGhvYWk8L3JkZjpsaT48L3JkZjpTZXE+PC9kYzpjcmVhdG9yPjxkYzpkZXNjcmlwdGlvbj48cmRmOkFsdD48cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPlBhc3Mgcm9hZCBodWdzIHRoZSBtb3VudGFpbiBwbGF0ZWF1IG9mIERvbmcgVmFuLCBIYSBHaWFuZywgVmlldG5hbSBpcyB2ZXJ5IHRyZWFjaGVyb3VzLCBidXQgdGhlIG1vc3QgYmVhdXRpZnVsLCBwZWFjZWZ1bC4gVGhlIG1vcmUgSSBzZWUgbG92ZSB0aGVpciBjb3VudHJ5IG1vcmU8L3JkZjpsaT48L3JkZjpBbHQ+PC9kYzpkZXNjcmlwdGlvbj4KPHBsdXM6TGljZW5zb3I+PHJkZjpTZXE+PHJkZjpsaSByZGY6cGFyc2VUeXBlPSdSZXNvdXJjZSc+PHBsdXM6TGljZW5zb3JVUkw+aHR0cHM6Ly93d3cuZ2V0dHlpbWFnZXMuY29tL2RldGFpbC80OTE5Mzg0NTA/dXRtX21lZGl1bT1vcmdhbmljJmFtcDt1dG1fc291cmNlPWdvb2dsZSZhbXA7dXRtX2NhbXBhaWduPWlwdGN1cmw8L3BsdXM6TGljZW5zb3JVUkw+PC9yZGY6bGk+PC9yZGY6U2VxPjwvcGx1czpMaWNlbnNvcj4KCQk8L3JkZjpEZXNjcmlwdGlvbj4KCTwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InciPz4K/9sAhAAJBgcIBwYJCAcICgoJCw0WDw0MDA0bFBUQFiAdIiIgHR8fJCg0LCQmMScfHy09LTE1Nzo6OiMrP0Q/OEM0OTo3AQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAByAMwDASIAAhEBAxEB/8QAGwAAAwADAQEAAAAAAAAAAAAAAwQFAAEGAgf/xAA6EAACAQIEBAMFBwQCAgMAAAABAgMEEQASITEFE0FRImFxFDKBkaEjQrHB0eHwBjNS8RViJHJDguL/xAAZAQADAQEBAAAAAAAAAAAAAAABAgMABAX/xAAqEQACAgICAAUEAQUAAAAAAAAAAQIRAyESMQQTIjJBM1FhcUKBkaGx8P/aAAwDAQACEQMRAD8A+qTcyKdUUWdhmAHTBKetSZGWRSrqNWvYH074QfkNV51mBYeIhWvr012A0PzxlVUw5iUjcG2pA/TDtnPTWwktaJFZIQ3hbVh1wITRvYGVy3m18JTSNyikKZB8b+t8BiSVIsymJSdfFdie2NZO22V0njMUiTBSGFrlLXH1wAV3IiIgYspFrA4mpVxrAzpJmcCy5Eyrm9TgC1E5qGZSsjX90AC/l29PywUa2dFS8qpYGmm+0HvI62a/l3wYOzuyMcumRkZcwPy1H82xF5khW8sCx9gyg6/PD01TT1lLlNQsM4GmU+FvI98K5FE0CrqBkVngL5wLrc3/AN4nQ1EytzGkV4mOVlAIF/LthuCpmp7pPZowfezXBHkcLcRpBMsk0WdoDq4IsUPfDxyfDJSSfQ1R1dOGMqztzHBQgnUjyN+nw/RiOSlGWMllvclho18c3ERE4WbQ5vuk64pQExggOzKxH3RdT8cM2GJR54im5f2bx215hvfz1wKpnWKVuWy5CPujT08uuEZ/aKWpWWoiSSMXCsyA3v01/DHrkLNTs9PKrKoJte5UemAmZsfiqplCgXHncnDZZuVmsOW2nSw+AxOpqR1IAddANSLYQ4gkiSsqF2YEWK3t8r2+mCqbA20tnRU9ZJDHy6leYuwyrthmaNpB4BZveyjY+Y88RKOvjnRVZjztmWxt+WG6TiFRG5ieEPCTo0erA41MKdoap3Ga4+A63xwv9c8WjquKRU6MGSmQi6tfxtuBbtYXx1HGON0nCWzySAyyLpCnvE9z2x8vAu0tZN4ZJ5GawS9iTsB0X+XxzZ8ia4oyPXtCxhykgaQLlIVlJt217YUlnMSPJM6yJ7zAvr9Pj+uAvxGNnJ5UYjAzLmjHiHcdMLUMycQq2EiAxRHVMgIJPT9vniSjStoYvcMjpZlWsqFLsQCkJ1t2J8/p8djVMiyBZFluW93lMDcW1uMT544JS3jMatqQrZeZ03/gwI09PcWCq6gHffttuMRdN3ZikDlaMtMoshZbtYW79/w3x68L+L2Yz/8AcXOIfLRfsgdRa0aEglzpYAYsUvFoaanji59IpUah2LH8MTyJ/GzH0tYoIATzVFxvKwHwxOqq1pZGSAq5ygtyyLDfrgMbxz0Q5jxlTocxzXPf1xMrHWGVlneoF1sgjZRmt9euPRQZvVLoceqqIkBMbC/+dwR88Dkq88S2geaR/Crs3hQa3ypb6m+BtUTRwRQKmVW2Dvqo+O59MJPV1LtzHkWSKIkZUFrMNL30w6YnQcTKXRnMQjJt4LMxt00w5khdWfWwXwjMLXxKqGndkcOsrbkK9ul9rY3y6xOY0cqsMmYh1C5h5W/PvgN2bZ0cXMFFDEPt2cENJpZbg+LXbp0OBopkjcGYCaI3Itsdd/274lwyT0mRKqZJFykBQDdgfz+GD0lTCWIfLnN8rg6D109PicTbKaZYDxSwNGyqje6FLAEnfTvtgUFVJRutldyRl6WNu4vvbCtNWTpJzlqbEna9vzxQYpX0zmoRS0gs2Tv069MJy49marYJ6WmlUPSyLG51ML3sPTAjzolMc0fLK/5a5vl0wnyZKWokimLKVIIPcdCP0/bFmGR6unKSgEKNFt4iP1xTkBRTWheCrMcpRGDA6MCpscO06q7h6Q5Sp1hKi+3TvicY+Q6mACVCdLe8LnawwVpDH9pICmSxNtxgpgX5CMEpJ0RUBRyNOgPW2NoqNPlcvfMbrbQ648GuNe4WOEAKb8wA5ie/0wzMy0YMkqolhmDbAk+eGcq7FpN6PSwKs5cXUZdlAW+Oe/qX+rqbhbyUlNGWqREc0yuLRtY206kYn8U4zUVhfLO0ahvsYogVDD/KQ728hYd76jHKVdGzyPPOzO6ksSdr79dD6nEHnTdWbrZ4karrOIziZwjRhuYzvYBr7Ht2xUIT2UghQAoClibDTr3xBreJSVTNGI1iSTxMBcltdzt88eBJJNJHTR5hKzaxgXNr3PoN9dPhiU4OX4CFnpTUziCniLym5AQixXbqbW1w00T8PiywhGbrmuM2vr5+WGIGpqGOWKmcLMwBlkv4jY+fx9TfE6pqhAxVXtL99VNgNNz/AAb4HNy18DG5KqaUgqCHYm+VSoI7efzwnNJUkCwVmF7nQMBf6dfPbXuzFWCIIGCP2Y9vTCFZMfZ2YuuW+2ewXfphoPfRj3RV0kn2YJUBlTPe7eLck2P7Ysk0UWkcEZB1JIsSfgMTuEUbFI45IlMrOJGTNsBqB+Hxx0y8IoIgF4hVStN1yWygdhcY5/EZYRlX+g8b6K8fGKNkAbMhQDxMLgHHniMYb/yOa7BPdso7jUXGOToeLiqqjHBTlJTor73Ivr9e2LEMtQI2WzM503Nj+2O9TXwLJ1pjVVWwHmAkySufHEX0UdLaWvjaLMpa4IR0EgSSQ2YWttbfCUDSqZIZ6QMpP+SjMenph+pJidJQqhNRkXUXt276fhjOVG43s9S1KRpaMKGUfdPu6Wx7iE9QozrNEslwQFa2v3j9O+JhySwLKhu8krE669vyw1QvLG6ZeYwyC2oAX8zhOgRW9jZymny8pnQkq+Qk2YbX+mDpTwRwZGCsiASowW57W77a/DCUIEsc0MkpUtlnBy5SLfMdPrgyzpPSy5FzBSQQBrlOg01v8sZsel2ORusMzRpGxUkOm2x/e+GvbKimYPG4jva1tfXrr8sS6OoiY5TGY8i28ajVTa3ToRht3igiMkCpnY9FtfzN8JKSj2FNUMTPPW0ySExSPGxKyMhBJPSw0y/71x5pKlqVhzZYlck+BHuWsL6D/eJ4q3lISokaCNzc3bRuxv0wSRqWndnkYWuBdiWBt5dfXEPPldGVHRyEGdSzEMW1PS/ngtRTRV8KmVbSoPs3118mHb8Mc7Lx1YKczZVWKNQALBmAv0C6Dfqe2Oab+sK6auExsILEIiAgDe1j1OLQyNq0ugSaOtmqBwxn9oRjKn3EuRrr/L4jVvFX4oqK8ssMKHQN1bcgDb8hf0wvEWq5OdNmWMAEjcr1t3vjUh9rkXkRfZKLJlGi+d/X+dccs88pv1CxiCqamRvCseRQe50XzIwjxYhaQl7/AGq2OU6jFuGljOYIxbKLlj7q/viDxytp5aynR/7MLeEEHxsbA9Nra/DCYXyyJIZo5p5MuXktErIfe677621+uKVDJ7PTASRL9oLB2NmfXz6fz1kRqzBtVFydQd+vy0w3KpC5wpXK2uXc3N9/nj0J1LQvY3VR5yCJFZ73DR2a/e9rn/eE0EMTaNHGLX0W2Ynzt++EJpyuYI2e+6g6fIWPfU49GQt4fE+YDxXJ/n44Ti0bYeZwd8xYana3yuf5fG+GUVTxGuiCKViU58xO9tjrv+2PNFB7XKkcc8e9wGB90b+V79MdbTcmkpIoKOzRhfARdfj5/wA+PPn8R5Uaj2NFDdGIOFQcqFWaZvelzAa67A+vqcJzTtmtEucdSbjW5PbGpAwbOGynfMwJt8/xxjPMgUchb5dSRv6DoMebF75Ptj2R62mm4LO09PMEgbS5SzIdBr+WG+G/1MiTLSz06Oun9v39LeK49etx6Ypzin4hHLNVKBOQApVhYr0BPXv5HTpjkJopqDiaTpkbI/MUygG/mflqfLpbHo4JRyr1+5GpI7ieenMi1dPzHR10CKC3yOp+GN09dT1EJjhZBIrhl6AtfUHsTruBjm+A1lVT51MIenchjCWuPVRbFyopqGtiWqgZDzBlZXFvgT1tbr5eWM5yg6bsy60Ho41ELRyIWKM297g389cNQsohBC5QOltdPIYmQTy0UeSR89OAARINU6aN19MU6bkyxM8QDqQGYDcEjtiyyJgS+xr2nMyBlBZ2Nso1tbXNf4YyiZIYVV0WODxB1fc/HT8DhjLGISoSwA2Gm3TBKdI6OFJKmBBKQcpI0QX0tfra3pgvIkjU72EpuHrS2Mgztc2jY+EWN/FY+W34bYX4hFHmWYVLQ5tQs63Qk66MuoHbQ/HG+ZK6NK5IW2in7o/n81wCFTXVgzgvCummny9ccjyTbt9CtfZDNFSzrEtQ0kDQPcGaMsALW8Nm8ROo6YBJHUTVC1aQr7LHpkmc2kPew+gw5VPG1N7NMJSlO5aF1YLkJtcWsQRe2h189cSJ5+cQkpmZ02aMABR2y6eX8GF57tG2tHmfioqL00cRRL6qSQSfXr12wOmgjOcyMixqNSdSf+o0wZOHO5L+1ARpe7NTj5A5sHZ0mJWJAkIGQXN/LbbXAllitRNTe2ANQ8jBIfDGuixE3A7epxS4XSzyxZ5CRGGsFy2v5+nnjKHh8ZJTJmOUm17Cw7nthfinGFWH2aBHVVug00b06455ScnUSkVW2F49xFFhEELFEUnYABh6dccfWFOTcpHct1N7YPWzpIOYZQtl1a9rdev81wi8plMaIhZtlslyxxfCuJOUrYKNULkFLORkUAbjrYb4NWRNECllYH7xJOX0/XF+moI+FU/MnINQRZWkOYpft5+eJdUEL5CGN+p6YePibloFUQRAIdD97TS9gPK+22APAgqEzqDGzgFip0W+uW2+KtTC4jdypyBblj0F9sapqU5DVPEWCAkR369PTFfP/kB9jCViuxipo7oilWzABlHQemGaOokYMs0yySA3AtcsPPpbfCkMVOoDCUFmW4jUCxPUn8uup1wHMsmSOCblugyMhBux9BYk+mOWSUtD2UXkqSl8xVQbi5t8++FxM0fgMhBG4Qm344CtXNSw5ajK8etntqv5nv3+uGKeGkniWRcpBG+Un5a4Rqlvr8DLZt4UkLZX5xe1nKj7PqLn6fHbS+F/6h4TLR0MVRIQYmfICTe46D4W9cM8Mi9kmk9llVtw0TOwsO17a+Vxh+qgkMCtARJTTNcRkWFtdCOhHfFHmePIknozfwcbR86WQIGRQj2GZgMdFAZaaGn/AORZHirAzwsBqcu9x5ael98Bm/pYyQmTh7iR5D44yfECOm2vXt03xHi58NQYJY5OdE2sbx6KSOoPkOuO6OTFmXpFs7WhyAtG8gZGH3vFYdiO2PFdHUcOX2iljkMQItyfFlB62sTb+X641wWP2xRJA/LqF1bW4I/HyxXp5noqlIp0JRiQANyN7r33xwSycJtf4DXyIcA45A0gFcAVOqSAkAHufLD8sprqqRlbmEGwexCp2Av/ADXA63gFBWsKmka7EkiSMnKf/Zfun5+uFRIeHxLDMjMEBBWTXw32uOm+37Yp5sJ7j2a67DV9SsAySsI4rWKNsPM288VKOcJmANgDYELYrYbnz1PztiDV8idYZ6cBog3MvmLBWGpvcnb88EWGSOm5hds0hzWFznvqP9DGnVJB5+ob4tWxKrM8mU730N8KcLpZ67LULAy04PvNsewHQ/ljVLwjmze0cYLMoGZKYELc20za7nsNfMWti29c8SJEVCU/uRjLYr8Og6XxCeWMNR2zabuQCup5pEWbhcbmmCAPTjWSNgPEbH3rnW42vra2FuFf+WqgRIinwoC+ree2GmY5s2Yq173B1B8seuKeKki4tSyAzQvyqx13II8LHzOxI3OXE1JZFS0zUeqqqhggkjpyGUL9oWG59O3rjjK2SQXjqaguiahQlrC+mu1sOvWQTVLGNsiW8KyWBDd/PTS+EZaezPlcAG7WuNPQbfHFsUVDsEnZvNEoBGke92xSpaZaCmFXUx5p5P7SHUKD1Pb98N8I4TZFrq2O6rrHG/3z0Nj0x54hVsZHZgJMxuobXTC5JuWkHjStk2qrZZ0SSRwGvb3xvhMqw8U75wRplUEbYJNJI63ZNM+gy2I899/PAzVRQu4qBzpc2VVdhYdLAdfU/Ad8r+BXt2ZBTtXNndzFTKfFIR756Kvf1x74zURRxNTwkiBDsB26/wA74BJMVN5F5juQoDLca/j5enrjUBVxILkgHxMVFyT+f4X03xq3yfSMK0MUDQ1KGNiyKsiMLXtmUH19788MioaaJRAkaSLe6sTYrsRbAamIoWaJlGlrra1j0/3jK1/tjVUzsEnBcG4IJubjTXRgQfTHVJrLBP5QezI1WUvFLlWVTZnEdg172676WufrpjUVNVxxgUpVozrc5119BpgXtlQnImWP7QlfFYEBTbe2v54FzjI7ycqFixueYbEaDS1sIoyD+TtJeDj2GArNE7xsQD7uYHYdB2/lhjdIk9LHzpVzRg6K3XTrf9zijUUT8NEki+FcvvkEp6XG3xthWCOZys+Yxym4ASQHTzG30x5TyTyLbtFZQ3snQVcc/GZ6eMRROBdHzWzHTvthypjEqpFxODmoCFzFWZrf9Tvb6YiUlPLL/Ux5gjdAGbKLAm5Bv9fhjrklVaeSlaZSrE2WcC47EXH1xXJPy5Rr7D5krVECr4dTUbQz8KlyImjLYgnzLD49B9cUqGqzZF4jHZJAGVmW4bsd/P54I9KBOyNmpfAMrO2YM19fd1A2xrMFjEdWqVAjPheIFr6W1v5aYaWfn7tsg/uPGMQOJaJ/CNVBcqfg36j443JLQ8YjaCrVI5gbZWuhB+X1H1wpHTRDMaOpZg3haGS5Kj1O3xwOup5HjMUkLl49nOjjX8PPbTCxabtPZh+XhTUlNyYIRIgOaNXsQR062O+5sMLQK7iSKeE+1OzRgFR4R1br3Go30wPhXtKU7LLLlhcnIOYzXtuew9L/AAw08yxcx3GU6Znb/wCTTS1umvTbBlOSbT7NoyREjgMcV8oFgQevr388IVNcgfLOQri4I6H9sZPUvMl4rjL/AG7DU+eBQU6NLZkUtoCduwxDko+4RhEZ5V5Ul0XLZWve/wDOmPJqJOGMFo5GUBbWbxZr+8GB0I8rYbVPZ1Kwqu4OfqoHb8MTXpY6ie0MJeZvfYPfKPU4eEnN8lpFFHQpU0VFVNmloWic2v7HKUF//Vr6+QIw5Hwqh4LLDNWVJl5kQeGKpQKyHMws1jY2y6YpRpTcOXNGebORo/RPMDr64T4tPQ8VEI4gswkiQRLPSOB4RtmU6fIjHRHO36ZvRqp2wHEONCoZyHz5CAch0B9RiXU1wTdQCT4ienzw3Tf0y1UJJuDVqzSRgkxTRGNso1PiGYH9+mM4fw2GgKVNQsctUTmCg+BPPXr57YaXCCvsWUm9gJKOenoJOISo4ITNHETYk9CQfXHMJUSvVpKXztfRc466bnbrjp+OmorSYEJLsLk9gO+OZakaOVVmJ8R2Mg0PY2v3xXw7Ti3Lti2O1UmSRZBmNgV0019BjI5yI3Z2C3ZcgkHhAIJ767W011wEy3qA5DHmGyAKAG06m+w6nb5Y1KkkZbnrk5lja4I0PkfM7flisUqpmQ8rK8QVpFOoGUDXytrgE9E7KyrKwjuTkzkEHsRe30wujywhY3uFb3gb+L+an0w3JFCsie0xmJrArKbEqe1/w64nuD0zC1DEVLQyctyXOTM2ltD+Pl8MBnoaQyE5hAeqcy1sP1EQZQ08YzkWzi5BB63G2BGFgbROkS/4s1vjrv66+uGU32mNFnW0nFnpnsrixHiszfXXfXFCkrqOWUPJUCB1srqyWUKPvXIsPgRt1xy6MhZLowbU3bQn+X/m+DTu8vC5o4TbNsBGo6Hbz136aeuPNeCLegqbRc4S1KK2tPJKw8y5ZEClxYEaHX719bfXDMlJBWHKrpZgfEAyOb6309PK/c45bhUYgrWqHM8SgmzvIHdjbS4A8K3FrDD8M0rTE7Tsuo1sgO51HbS3f44GTE07iykZNrZW5VZRfZvA9VCwsrq2cr59se/+N8KPDUKbA2WRSFIsdDa5+FsJirlpVSKFgguCwva48upGlvlhuHjckgEhCNTrsX1ZumUfviLUw8UzBCHoyFBV2Fr3JuPI7j0PfGhWNELzKstPa4zgN8Ba2vp9MN0vFY+WA8a8y3iyNr5j8cK8Slinzt7M+YbZGNyfQAeff47YWF3TFlCloYMkdQFQylBc5SBbU6kHUfO+JnE6KaWpJZpVW1rCxVvPXW+DU9JPURB44p5IlNsrAFlNtre8N+ww9FBOqWmikSEa5WQqfrijyvH2JJOto5+YVdLHZYpFU6iVUEgt8Cbehw3QyQw5JJZWIJuBuzHva/47YpMBmOVXtqTlGnodLYk8WhjlmjEMbMGbNGIBYnUnKTeygd+3rgx45k2wcdWhqaf21jBT2jpYzZpDsNtPM6/6x5mrqWgpmjYqoVdQ33r9baknbG4aUycuN6jKo92CBNIgbXAPXz0/fynBqeKaRZIiSD4ZHkLm2+2lj5/UYeWTGtP4KOf2JlK1VxRX9kUzxbFZALRfE202Opv+TPsKxoOeQ+W2gFhfz1ue+KtEsvI5tRkVC2VCF1YGwvl1thLiR9mm5udDFYWNyCex1Nj9PphfN8yXGInZWoFjj/pric3DVIkWNYytgGWMk5jb5fAY42SaJI1aVCQpBDWBy9b2PX1xSoa6op6lqmjmMDgkEAggjfXodOmN1lNR8WYyUksXD64nxRnwxS9f/qb46YpOlIEt9iMs4NLaAlVtcEnLbtjn5ZBzRGh2JzMSddzpr664NxKj4lwma1ekkMbNe9vC99tv1whU1JJcwxMmhs2l1F+3pcnHXixcehKvQ2ailSZYs2caBip1HkCPTy2+GF6p4o0s8rOSLjMb2sdrAa7fXDKU0Zmps9is0CPci42//WF5oo1MkZcBypte+nXXHR5aiyjgeEkZ3bLeKJgbZkHit06H+d8HEkkgMaAAC6hZBfQbG/Q4nzAxpHleyGzZCoBGpFwfLTp+zKsLjPKAbWMnYjzJ2/T4YWUPkTocSpendEllVIG0ESi5F+lvidb4djjGX7Odo1/wJvb07DyxPESyU7iI3y2FlN8t9vQY9wVfEIoUWmqWgS39uKQ2B67MPwxzyjfRv2dRxmKJZVZY0DNYkhRqbYSiJzKt/Dz41t5ctjb5gfIYzGY4fD7gv0Z+4PE7/wDIVCZ2ygAhb6DQfrhfg0kjSVCs7ECawBOwyL+pxmMxVL0v9IrDsfp/EkbNqxk1J3OHZQCGuBomnlpjMZjlmOvaIwk2l1OjAD000w5L/YzfeJNz1OgxrGYMvcBdnugml/5RI+Y+Sx8OY26dMdAzNGWVGKrroDYbjGYzEc3a/RePRr+o409jpjkW7WzG2/riFRqoqKSwGsBc6fe8Ovr54zGYth+nInl9zD8FJIZybtffrg1V989SGue+uMxmObL9b/vySfaDkB+F04cBgbXvrfHOcX9+oHS50+BxvGYfwPcv2CHRFDNmg1OqL18xh+qAyjQar+uMxmPRn2hDpf6f/wDJ4PVxVH2sahQqSeIC+9gcfNKuKOLjNZHFGiIshsqqABv0xvGY6PCfS/uPArlFas4UhUFRQg5SNNA9sS6rXiNRfXGYzHW+y79v9SdXKpiiuBqbHTfXBlUPVKjAFDFcqdie+MxmN/E5vkZoVVKeRUUKFawAFrC+FEAZ5cwBs5GuMxmJLtgP/9k="</a></li>
+                        <li><a href="https://www.vietnambooking.com/du-lich/trai-nghiem/kinh-nghiem-du-lich-ha-giang.html">Kinh nghiệm du lịch Hà Giang – Bí kíp chinh phục “con đường hạnh phúc” giữa núi đồi Tây Bắc</a></li>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="ttlh">
+                    <h2>Thông tin liên hệ</h2>
+                    <p>Công ty du lịch Trips Travel</p>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" style="color: #f0f2f5;"></i>02c,Hàn Mặc Tử,Thuận Phước,Hải Châu,Đà Nẵng</li>
+                        <li><i class="fa-solid fa-phone" style="color: #f0f2f5;"></i>0985937104</li>
+                        <li><i class="fa-solid fa-envelope" style="color: #f0f2f5;"></i>doducloc2k4@gmai.com</li>
+                        <li><i class="fa-solid fa-earth-americas" style="color: #f0f2f5;"></i></i>www.doducloc.com</li>
+                    </ul>
+                </div>
+                <div class="httv">
+                    <h2>Hỗ trợ tư vấn</h2>
+                    <p>TEL 0985937104</p>
+                    <p>HOTLINE 0985937104</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/ca.nam.9237"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" /></a></li>
+                        <li><a href="https://www.instagram.com/ducloc_0107"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/800px-Instagram-Icon.png" /></a></li>
+                        <li><a href="https://twitter.com/Lcc61234221"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" /></a></li>
+                        <li><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" /></li>
+                    </ul>
+                </div>
+                <div class="ttcb">
+                    <h2>Thông tin cần biết</h2>
+                    <ul>
+                        <li><a href="#">Điều kiện điều khoản</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                        <li><a href="#">Bảo mật thông tin khách hàng</a></li>
+                        <li><a href="#">Chính sách quy định</a></li>
+                    </ul>
+                </div>
+            </footer>
+</body>
+</html>
